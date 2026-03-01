@@ -21,5 +21,6 @@
         <hr/>
     {% endfor %}
 
-    {% include "paginator.html" with page=posts %}
+    {% comment %} {% include "paginator.html" with page=posts %} {% endcomment %}
+    {% include "paginator.html" with page=page_obj %}
 {% endblock content %}
